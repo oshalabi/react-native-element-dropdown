@@ -557,7 +557,7 @@ const DropdownComponent: <T>(
             <CInput
               testID={testID + ' input'}
               accessibilityLabel={accessibilityLabel + ' input'}
-              style={[styles.input, inputSearchStyle]}
+              style={StyleSheet.flatten([styles.input, inputSearchStyle])}
               inputStyle={[inputSearchStyle, font()]}
               value={searchText}
               autoCorrect={false}
